@@ -1,0 +1,863 @@
+[
+  {
+    "path": "/",
+    "width": 375,
+    "height": 8700,
+    "file": "home-375.webp",
+    "issues": []
+  },
+  {
+    "path": "/",
+    "width": 768,
+    "height": 6521,
+    "file": "home-768.webp",
+    "issues": []
+  },
+  {
+    "path": "/",
+    "width": 1440,
+    "height": 4877,
+    "file": "home-1440.webp",
+    "issues": []
+  },
+  {
+    "path": "/services/",
+    "width": 375,
+    "height": 3606,
+    "file": "services-375.webp",
+    "issues": []
+  },
+  {
+    "path": "/services/",
+    "width": 768,
+    "height": 2686,
+    "file": "services-768.webp",
+    "issues": []
+  },
+  {
+    "path": "/services/",
+    "width": 1440,
+    "height": 2024,
+    "file": "services-1440.webp",
+    "issues": []
+  },
+  {
+    "path": "/services/teacher-registration-licensing/",
+    "width": 375,
+    "height": 4423,
+    "file": "services-teacher-registration-licensing-375.webp",
+    "issues": []
+  },
+  {
+    "path": "/services/teacher-registration-licensing/",
+    "width": 768,
+    "height": 3556,
+    "file": "services-teacher-registration-licensing-768.webp",
+    "issues": []
+  },
+  {
+    "path": "/services/teacher-registration-licensing/",
+    "width": 1440,
+    "height": 2735,
+    "file": "services-teacher-registration-licensing-1440.webp",
+    "issues": []
+  },
+  {
+    "path": "/services/student-registration/",
+    "width": 375,
+    "height": 3282,
+    "file": "services-student-registration-375.webp",
+    "issues": []
+  },
+  {
+    "path": "/services/student-registration/",
+    "width": 768,
+    "height": 2703,
+    "file": "services-student-registration-768.webp",
+    "issues": []
+  },
+  {
+    "path": "/services/student-registration/",
+    "width": 1440,
+    "height": 1830,
+    "file": "services-student-registration-1440.webp",
+    "issues": []
+  },
+  {
+    "path": "/services/professional-development/",
+    "width": 375,
+    "height": 3813,
+    "file": "services-professional-development-375.webp",
+    "issues": []
+  },
+  {
+    "path": "/services/professional-development/",
+    "width": 768,
+    "height": 3181,
+    "file": "services-professional-development-768.webp",
+    "issues": []
+  },
+  {
+    "path": "/services/professional-development/",
+    "width": 1440,
+    "height": 2322,
+    "file": "services-professional-development-1440.webp",
+    "issues": []
+  },
+  {
+    "path": "/services/teacher-verification/",
+    "width": 375,
+    "height": 3339,
+    "file": "services-teacher-verification-375.webp",
+    "issues": []
+  },
+  {
+    "path": "/services/teacher-verification/",
+    "width": 768,
+    "height": 2839,
+    "file": "services-teacher-verification-768.webp",
+    "issues": []
+  },
+  {
+    "path": "/services/teacher-verification/",
+    "width": 1440,
+    "height": 1961,
+    "file": "services-teacher-verification-1440.webp",
+    "issues": []
+  },
+  {
+    "path": "/services/code-of-ethics/",
+    "width": 375,
+    "height": 5116,
+    "file": "services-code-of-ethics-375.webp",
+    "issues": []
+  },
+  {
+    "path": "/services/code-of-ethics/",
+    "width": 768,
+    "height": 4325,
+    "file": "services-code-of-ethics-768.webp",
+    "issues": []
+  },
+  {
+    "path": "/services/code-of-ethics/",
+    "width": 1440,
+    "height": 3546,
+    "file": "services-code-of-ethics-1440.webp",
+    "issues": []
+  },
+  {
+    "path": "/services/customer-support/",
+    "width": 375,
+    "height": 3057,
+    "file": "services-customer-support-375.webp",
+    "issues": []
+  },
+  {
+    "path": "/services/customer-support/",
+    "width": 768,
+    "height": 2679,
+    "file": "services-customer-support-768.webp",
+    "issues": []
+  },
+  {
+    "path": "/services/customer-support/",
+    "width": 1440,
+    "height": 1888,
+    "file": "services-customer-support-1440.webp",
+    "issues": []
+  },
+  {
+    "path": "/services/research-advocacy/",
+    "width": 375,
+    "height": 3383,
+    "file": "services-research-advocacy-375.webp",
+    "issues": []
+  },
+  {
+    "path": "/services/research-advocacy/",
+    "width": 768,
+    "height": 2823,
+    "file": "services-research-advocacy-768.webp",
+    "issues": []
+  },
+  {
+    "path": "/services/research-advocacy/",
+    "width": 1440,
+    "height": 1946,
+    "file": "services-research-advocacy-1440.webp",
+    "issues": []
+  },
+  {
+    "path": "/about/",
+    "width": 375,
+    "height": 5297,
+    "file": "about-375.webp",
+    "issues": []
+  },
+  {
+    "path": "/about/",
+    "width": 768,
+    "height": 4150,
+    "file": "about-768.webp",
+    "issues": []
+  },
+  {
+    "path": "/about/",
+    "width": 1440,
+    "height": 3336,
+    "file": "about-1440.webp",
+    "issues": []
+  },
+  {
+    "path": "/about/leadership/",
+    "width": 375,
+    "height": 15151,
+    "file": "about-leadership-375.webp",
+    "issues": []
+  },
+  {
+    "path": "/about/leadership/",
+    "width": 768,
+    "height": 8881,
+    "file": "about-leadership-768.webp",
+    "issues": []
+  },
+  {
+    "path": "/about/leadership/",
+    "width": 1440,
+    "height": 5269,
+    "file": "about-leadership-1440.webp",
+    "issues": []
+  },
+  {
+    "path": "/about/regulatory-instruments/",
+    "width": 375,
+    "height": 3754,
+    "file": "about-regulatory-instruments-375.webp",
+    "issues": []
+  },
+  {
+    "path": "/about/regulatory-instruments/",
+    "width": 768,
+    "height": 2579,
+    "file": "about-regulatory-instruments-768.webp",
+    "issues": []
+  },
+  {
+    "path": "/about/regulatory-instruments/",
+    "width": 1440,
+    "height": 2014,
+    "file": "about-regulatory-instruments-1440.webp",
+    "issues": []
+  },
+  {
+    "path": "/media/news/strengthening-the-professionalisation-of-teaching/",
+    "width": 375,
+    "height": 4697,
+    "file": "media-news-strengthening-the-professionalisation-of-teaching-375.webp",
+    "issues": []
+  },
+  {
+    "path": "/media/news/strengthening-the-professionalisation-of-teaching/",
+    "width": 768,
+    "height": 3633,
+    "file": "media-news-strengthening-the-professionalisation-of-teaching-768.webp",
+    "issues": []
+  },
+  {
+    "path": "/media/news/strengthening-the-professionalisation-of-teaching/",
+    "width": 1440,
+    "height": 3026,
+    "file": "media-news-strengthening-the-professionalisation-of-teaching-1440.webp",
+    "issues": []
+  },
+  {
+    "path": "/media/news/aftra-13th-conference-15th-round-table/",
+    "width": 375,
+    "height": 4948,
+    "file": "media-news-aftra-13th-conference-15th-round-table-375.webp",
+    "issues": []
+  },
+  {
+    "path": "/media/news/aftra-13th-conference-15th-round-table/",
+    "width": 768,
+    "height": 3779,
+    "file": "media-news-aftra-13th-conference-15th-round-table-768.webp",
+    "issues": []
+  },
+  {
+    "path": "/media/news/aftra-13th-conference-15th-round-table/",
+    "width": 1440,
+    "height": 3233,
+    "file": "media-news-aftra-13th-conference-15th-round-table-1440.webp",
+    "issues": []
+  },
+  {
+    "path": "/media/news/botepco-and-unicef-strengthen-teacher-professional-development/",
+    "width": 375,
+    "height": 4436,
+    "file": "media-news-botepco-and-unicef-strengthen-teacher-professional-development-375.webp",
+    "issues": []
+  },
+  {
+    "path": "/media/news/botepco-and-unicef-strengthen-teacher-professional-development/",
+    "width": 768,
+    "height": 3482,
+    "file": "media-news-botepco-and-unicef-strengthen-teacher-professional-development-768.webp",
+    "issues": []
+  },
+  {
+    "path": "/media/news/botepco-and-unicef-strengthen-teacher-professional-development/",
+    "width": 1440,
+    "height": 2865,
+    "file": "media-news-botepco-and-unicef-strengthen-teacher-professional-development-1440.webp",
+    "issues": []
+  },
+  {
+    "path": "/media/news/gbv-project-2025/",
+    "width": 375,
+    "height": 4928,
+    "file": "media-news-gbv-project-2025-375.webp",
+    "issues": []
+  },
+  {
+    "path": "/media/news/gbv-project-2025/",
+    "width": 768,
+    "height": 3968,
+    "file": "media-news-gbv-project-2025-768.webp",
+    "issues": []
+  },
+  {
+    "path": "/media/news/gbv-project-2025/",
+    "width": 1440,
+    "height": 3333,
+    "file": "media-news-gbv-project-2025-1440.webp",
+    "issues": []
+  },
+  {
+    "path": "/media/news/gbv-project-2024/",
+    "width": 375,
+    "height": 4860,
+    "file": "media-news-gbv-project-2024-375.webp",
+    "issues": []
+  },
+  {
+    "path": "/media/news/gbv-project-2024/",
+    "width": 768,
+    "height": 4014,
+    "file": "media-news-gbv-project-2024-768.webp",
+    "issues": []
+  },
+  {
+    "path": "/media/news/gbv-project-2024/",
+    "width": 1440,
+    "height": 3432,
+    "file": "media-news-gbv-project-2024-1440.webp",
+    "issues": []
+  },
+  {
+    "path": "/media/news/tashata-jss-csr-project/",
+    "width": 375,
+    "height": 4437,
+    "file": "media-news-tashata-jss-csr-project-375.webp",
+    "issues": []
+  },
+  {
+    "path": "/media/news/tashata-jss-csr-project/",
+    "width": 768,
+    "height": 3740,
+    "file": "media-news-tashata-jss-csr-project-768.webp",
+    "issues": []
+  },
+  {
+    "path": "/media/news/tashata-jss-csr-project/",
+    "width": 1440,
+    "height": 3090,
+    "file": "media-news-tashata-jss-csr-project-1440.webp",
+    "issues": []
+  },
+  {
+    "path": "/media/news/sowa-primary-school-csr-project/",
+    "width": 375,
+    "height": 4738,
+    "file": "media-news-sowa-primary-school-csr-project-375.webp",
+    "issues": []
+  },
+  {
+    "path": "/media/news/sowa-primary-school-csr-project/",
+    "width": 768,
+    "height": 3913,
+    "file": "media-news-sowa-primary-school-csr-project-768.webp",
+    "issues": []
+  },
+  {
+    "path": "/media/news/sowa-primary-school-csr-project/",
+    "width": 1440,
+    "height": 3310,
+    "file": "media-news-sowa-primary-school-csr-project-1440.webp",
+    "issues": []
+  },
+  {
+    "path": "/media/",
+    "width": 375,
+    "height": 3202,
+    "file": "media-375.webp",
+    "issues": []
+  },
+  {
+    "path": "/media/",
+    "width": 768,
+    "height": 2338,
+    "file": "media-768.webp",
+    "issues": []
+  },
+  {
+    "path": "/media/",
+    "width": 1440,
+    "height": 1730,
+    "file": "media-1440.webp",
+    "issues": []
+  },
+  {
+    "path": "/media/news/",
+    "width": 375,
+    "height": 5132,
+    "file": "media-news-375.webp",
+    "issues": []
+  },
+  {
+    "path": "/media/news/",
+    "width": 768,
+    "height": 3587,
+    "file": "media-news-768.webp",
+    "issues": []
+  },
+  {
+    "path": "/media/news/",
+    "width": 1440,
+    "height": 2905,
+    "file": "media-news-1440.webp",
+    "issues": []
+  },
+  {
+    "path": "/media/press-releases/",
+    "width": 375,
+    "height": 3490,
+    "file": "media-press-releases-375.webp",
+    "issues": []
+  },
+  {
+    "path": "/media/press-releases/",
+    "width": 768,
+    "height": 3039,
+    "file": "media-press-releases-768.webp",
+    "issues": []
+  },
+  {
+    "path": "/media/press-releases/",
+    "width": 1440,
+    "height": 2832,
+    "file": "media-press-releases-1440.webp",
+    "issues": []
+  },
+  {
+    "path": "/media/publications/",
+    "width": 375,
+    "height": 3021,
+    "file": "media-publications-375.webp",
+    "issues": []
+  },
+  {
+    "path": "/media/publications/",
+    "width": 768,
+    "height": 2434,
+    "file": "media-publications-768.webp",
+    "issues": []
+  },
+  {
+    "path": "/media/publications/",
+    "width": 1440,
+    "height": 2179,
+    "file": "media-publications-1440.webp",
+    "issues": []
+  },
+  {
+    "path": "/media/notices/",
+    "width": 375,
+    "height": 2803,
+    "file": "media-notices-375.webp",
+    "issues": []
+  },
+  {
+    "path": "/media/notices/",
+    "width": 768,
+    "height": 2368,
+    "file": "media-notices-768.webp",
+    "issues": []
+  },
+  {
+    "path": "/media/notices/",
+    "width": 1440,
+    "height": 2108,
+    "file": "media-notices-1440.webp",
+    "issues": []
+  },
+  {
+    "path": "/media/teacher-stories/",
+    "width": 375,
+    "height": 2665,
+    "file": "media-teacher-stories-375.webp",
+    "issues": []
+  },
+  {
+    "path": "/media/teacher-stories/",
+    "width": 768,
+    "height": 1977,
+    "file": "media-teacher-stories-768.webp",
+    "issues": []
+  },
+  {
+    "path": "/media/teacher-stories/",
+    "width": 1440,
+    "height": 1609,
+    "file": "media-teacher-stories-1440.webp",
+    "issues": []
+  },
+  {
+    "path": "/media/events/",
+    "width": 375,
+    "height": 3347,
+    "file": "media-events-375.webp",
+    "issues": []
+  },
+  {
+    "path": "/media/events/",
+    "width": 768,
+    "height": 2364,
+    "file": "media-events-768.webp",
+    "issues": []
+  },
+  {
+    "path": "/media/events/",
+    "width": 1440,
+    "height": 1937,
+    "file": "media-events-1440.webp",
+    "issues": []
+  },
+  {
+    "path": "/media/galleries/",
+    "width": 375,
+    "height": 4852,
+    "file": "media-galleries-375.webp",
+    "issues": []
+  },
+  {
+    "path": "/media/galleries/",
+    "width": 768,
+    "height": 3344,
+    "file": "media-galleries-768.webp",
+    "issues": []
+  },
+  {
+    "path": "/media/galleries/",
+    "width": 1440,
+    "height": 2697,
+    "file": "media-galleries-1440.webp",
+    "issues": []
+  },
+  {
+    "path": "/csr/",
+    "width": 375,
+    "height": 3627,
+    "file": "csr-375.webp",
+    "issues": []
+  },
+  {
+    "path": "/csr/",
+    "width": 768,
+    "height": 2515,
+    "file": "csr-768.webp",
+    "issues": []
+  },
+  {
+    "path": "/csr/",
+    "width": 1440,
+    "height": 2298,
+    "file": "csr-1440.webp",
+    "issues": []
+  },
+  {
+    "path": "/cpd/",
+    "width": 375,
+    "height": 2547,
+    "file": "cpd-375.webp",
+    "issues": []
+  },
+  {
+    "path": "/cpd/",
+    "width": 768,
+    "height": 2041,
+    "file": "cpd-768.webp",
+    "issues": []
+  },
+  {
+    "path": "/cpd/",
+    "width": 1440,
+    "height": 1595,
+    "file": "cpd-1440.webp",
+    "issues": []
+  },
+  {
+    "path": "/cpd/providers/",
+    "width": 375,
+    "height": 2768,
+    "file": "cpd-providers-375.webp",
+    "issues": []
+  },
+  {
+    "path": "/cpd/providers/",
+    "width": 768,
+    "height": 2238,
+    "file": "cpd-providers-768.webp",
+    "issues": []
+  },
+  {
+    "path": "/cpd/providers/",
+    "width": 1440,
+    "height": 1991,
+    "file": "cpd-providers-1440.webp",
+    "issues": []
+  },
+  {
+    "path": "/cpd/events/",
+    "width": 375,
+    "height": 2989,
+    "file": "cpd-events-375.webp",
+    "issues": []
+  },
+  {
+    "path": "/cpd/events/",
+    "width": 768,
+    "height": 2181,
+    "file": "cpd-events-768.webp",
+    "issues": []
+  },
+  {
+    "path": "/cpd/events/",
+    "width": 1440,
+    "height": 1843,
+    "file": "cpd-events-1440.webp",
+    "issues": []
+  },
+  {
+    "path": "/procurement/",
+    "width": 375,
+    "height": 2270,
+    "file": "procurement-375.webp",
+    "issues": []
+  },
+  {
+    "path": "/procurement/",
+    "width": 768,
+    "height": 1728,
+    "file": "procurement-768.webp",
+    "issues": []
+  },
+  {
+    "path": "/procurement/",
+    "width": 1440,
+    "height": 1443,
+    "file": "procurement-1440.webp",
+    "issues": []
+  },
+  {
+    "path": "/procurement/tenders/",
+    "width": 375,
+    "height": 3445,
+    "file": "procurement-tenders-375.webp",
+    "issues": []
+  },
+  {
+    "path": "/procurement/tenders/",
+    "width": 768,
+    "height": 2759,
+    "file": "procurement-tenders-768.webp",
+    "issues": []
+  },
+  {
+    "path": "/procurement/tenders/",
+    "width": 1440,
+    "height": 2414,
+    "file": "procurement-tenders-1440.webp",
+    "issues": []
+  },
+  {
+    "path": "/jobs/",
+    "width": 375,
+    "height": 2755,
+    "file": "jobs-375.webp",
+    "issues": []
+  },
+  {
+    "path": "/jobs/",
+    "width": 768,
+    "height": 2163,
+    "file": "jobs-768.webp",
+    "issues": []
+  },
+  {
+    "path": "/jobs/",
+    "width": 1440,
+    "height": 1887,
+    "file": "jobs-1440.webp",
+    "issues": []
+  },
+  {
+    "path": "/procurement/supplier-registration/",
+    "width": 375,
+    "height": 8126,
+    "file": "procurement-supplier-registration-375.webp",
+    "issues": []
+  },
+  {
+    "path": "/procurement/supplier-registration/",
+    "width": 768,
+    "height": 7157,
+    "file": "procurement-supplier-registration-768.webp",
+    "issues": []
+  },
+  {
+    "path": "/procurement/supplier-registration/",
+    "width": 1440,
+    "height": 6744,
+    "file": "procurement-supplier-registration-1440.webp",
+    "issues": []
+  },
+  {
+    "path": "/contact/",
+    "width": 375,
+    "height": 3634,
+    "file": "contact-375.webp",
+    "issues": []
+  },
+  {
+    "path": "/contact/",
+    "width": 768,
+    "height": 3452,
+    "file": "contact-768.webp",
+    "issues": []
+  },
+  {
+    "path": "/contact/",
+    "width": 1440,
+    "height": 3015,
+    "file": "contact-1440.webp",
+    "issues": []
+  },
+  {
+    "path": "/help/",
+    "width": 375,
+    "height": 3644,
+    "file": "help-375.webp",
+    "issues": []
+  },
+  {
+    "path": "/help/",
+    "width": 768,
+    "height": 3102,
+    "file": "help-768.webp",
+    "issues": []
+  },
+  {
+    "path": "/help/",
+    "width": 1440,
+    "height": 2591,
+    "file": "help-1440.webp",
+    "issues": []
+  },
+  {
+    "path": "/data-privacy-notice/",
+    "width": 375,
+    "height": 9289,
+    "file": "data-privacy-notice-375.webp",
+    "issues": []
+  },
+  {
+    "path": "/data-privacy-notice/",
+    "width": 768,
+    "height": 6909,
+    "file": "data-privacy-notice-768.webp",
+    "issues": []
+  },
+  {
+    "path": "/data-privacy-notice/",
+    "width": 1440,
+    "height": 6310,
+    "file": "data-privacy-notice-1440.webp",
+    "issues": []
+  },
+  {
+    "path": "/cookie-policy/",
+    "width": 375,
+    "height": 2831,
+    "file": "cookie-policy-375.webp",
+    "issues": []
+  },
+  {
+    "path": "/cookie-policy/",
+    "width": 768,
+    "height": 2306,
+    "file": "cookie-policy-768.webp",
+    "issues": []
+  },
+  {
+    "path": "/cookie-policy/",
+    "width": 1440,
+    "height": 2051,
+    "file": "cookie-policy-1440.webp",
+    "issues": []
+  },
+  {
+    "path": "/search/?q=licence",
+    "width": 375,
+    "height": 2394,
+    "file": "search-q-licence-375.webp",
+    "issues": []
+  },
+  {
+    "path": "/search/?q=licence",
+    "width": 768,
+    "height": 1958,
+    "file": "search-q-licence-768.webp",
+    "issues": []
+  },
+  {
+    "path": "/search/?q=licence",
+    "width": 1440,
+    "height": 1661,
+    "file": "search-q-licence-1440.webp",
+    "issues": []
+  },
+  {
+    "path": "/404.html",
+    "width": 375,
+    "height": 2535,
+    "file": "404-html-375.webp",
+    "issues": []
+  },
+  {
+    "path": "/404.html",
+    "width": 768,
+    "height": 2038,
+    "file": "404-html-768.webp",
+    "issues": []
+  },
+  {
+    "path": "/404.html",
+    "width": 1440,
+    "height": 1772,
+    "file": "404-html-1440.webp",
+    "issues": []
+  }
+]

@@ -1,0 +1,117 @@
+# BOTEPCO static site — Apache configuration
+# Works on Apache 2.4 (XAMPP, most shared hosts). Other hosts: see README.
+
+Options -Indexes
+DirectoryIndex index.html
+ErrorDocument 404 /404.html
+
+# --------------------------------------------------------------------------
+# 301 redirects from the old WordPress URLs
+# --------------------------------------------------------------------------
+<IfModule mod_alias.c>
+  # Services
+  RedirectMatch 301 ^/teacher-registration-and-licensing/?$   /services/teacher-registration-licensing/
+  RedirectMatch 301 ^/student-registration/?$                 /services/student-registration/
+  RedirectMatch 301 ^/professional-development/?$             /services/professional-development/
+  RedirectMatch 301 ^/teacher-verification/?$                 /services/teacher-verification/
+  RedirectMatch 301 ^/teacher-code-of-ethics/?$               /services/code-of-ethics/
+  RedirectMatch 301 ^/code-of-professional-ethics/?$          /services/code-of-ethics/
+  RedirectMatch 301 ^/customer-support/?$                     /services/customer-support/
+  RedirectMatch 301 ^/research-advocacy/?$                    /services/research-advocacy/
+
+  # About
+  RedirectMatch 301 ^/leadership/?$                           /about/leadership/
+  RedirectMatch 301 ^/regulatory-instruments/?$               /about/regulatory-instruments/
+
+  # CPD
+  RedirectMatch 301 ^/cpd-providers(-2)?/?$                   /cpd/providers/
+  RedirectMatch 301 ^/cpd-provider/.*$                        /cpd/providers/
+  RedirectMatch 301 ^/cpd-events/?$                           /cpd/events/
+  RedirectMatch 301 ^/cpd_event/.*$                           /cpd/events/
+
+  # News articles (specific slugs first, then the listing)
+  RedirectMatch 301 ^/news/botswana-hailed-for-successfully-hosting-the-aftra-13th-conference-15th-round-table/?$  /media/news/aftra-13th-conference-15th-round-table/
+  RedirectMatch 301 ^/news/(strengthening-the-professionalisation-of-teaching|botepco-and-unicef-strengthen-teacher-professional-development|gbv-project-2025|gbv-project-2024|tashata-jss-csr-project|sowa-primary-school-csr-project)/?$  /media/news/$1/
+  RedirectMatch 301 ^/news/?$                                 /media/news/
+  RedirectMatch 301 ^/category/.*$                            /media/news/
+
+  # Media hub
+  RedirectMatch 301 ^/press-releases?/?.*$                    /media/press-releases/
+  RedirectMatch 301 ^/publications?/?.*$                      /media/publications/
+  RedirectMatch 301 ^/notices/?$                              /media/notices/
+  RedirectMatch 301 ^/teacher-stories/?$                      /media/teacher-stories/
+  RedirectMatch 301 ^/testimony/.*$                           /media/teacher-stories/
+  RedirectMatch 301 ^/events?/?.*$                            /media/events/
+  RedirectMatch 301 ^/news-copy/?$                            /media/galleries/
+  RedirectMatch 301 ^/gallery/.*$                             /media/galleries/
+
+  # Procurement
+  RedirectMatch 301 ^/tenders/?$                              /procurement/tenders/
+  RedirectMatch 301 ^/(tender|rfq)/.*$                        /procurement/tenders/
+  RedirectMatch 301 ^/supplier-registration/?$                /procurement/supplier-registration/
+
+  # Legal
+  RedirectMatch 301 ^/cookie-policy-za/?$                     /cookie-policy/
+
+  # Documents that were linked from the old site
+  RedirectMatch 301 ^/wp-content/uploads/2026/10/BOTEPCO-ACT\.pdf$                         /assets/docs/botepco-act-2019.pdf
+  RedirectMatch 301 ^/wp-content/uploads/2026/10/Teacher-Code-of-Ethics-Booklet-2025\.pdf$ /assets/docs/teacher-code-of-ethics-2025.pdf
+  RedirectMatch 301 ^/wp-content/uploads/2026/1[01]/BOTEPCO-Regulations-Gazzetted(-1)?\.pdf$ /assets/docs/botepco-regulations.pdf
+
+  # Removed for good: tax certificates wrongly linked from the old press releases
+  RedirectMatch 410 ^/wp-content/uploads/2026/09/Tax-Clearance-Certificate.*$
+
+  # Authoring files are not part of the public site
+  RedirectMatch 404 ^/(partials|tools)/
+  RedirectMatch 404 ^/(AUDIT|README|REPORT)\.md$
+</IfModule>
+
+# --------------------------------------------------------------------------
+# Security headers
+# --------------------------------------------------------------------------
+<IfModule mod_headers.c>
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set X-Frame-Options "SAMEORIGIN"
+  Header always set Permissions-Policy "camera=(), microphone=(), geolocation=(), payment=()"
+
+  # Content Security Policy. It allows only this site's own files, the Google map
+  # frame, and the one inline script that swaps the no-js class (hash below; update
+  # it if that script changes). Tested 3 Nov 2026 on all 41 pages at 375/768/1440 px
+  # with no violations. Enable on staging first; inline style="" attributes or new
+  # inline scripts added later would be blocked.
+  # Header always set Content-Security-Policy "default-src 'self'; script-src 'self' 'sha256-e2g5HkZP+fghbsY1m7moq4GopOo7zRRaAHNyQ2Q7oSI='; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; frame-src https://maps.google.com https://www.google.com; form-action 'self'; base-uri 'self'; frame-ancestors 'self'"
+
+  # Once the site is served only over HTTPS:
+  # Header always set Strict-Transport-Security "max-age=31536000"
+</IfModule>
+
+# --------------------------------------------------------------------------
+# Compression and caching
+# File names are not fingerprinted, so CSS/JS caching is kept short.
+# --------------------------------------------------------------------------
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css text/javascript application/javascript application/json image/svg+xml text/xml application/xml
+</IfModule>
+
+<IfModule mod_mime.c>
+  AddType application/javascript .js
+  AddType font/woff2 .woff2
+  AddType image/webp .webp
+</IfModule>
+
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresDefault "access plus 1 hour"
+  ExpiresByType text/html "access plus 0 seconds"
+  ExpiresByType text/css "access plus 1 day"
+  ExpiresByType application/javascript "access plus 1 day"
+  ExpiresByType application/json "access plus 1 hour"
+  ExpiresByType image/webp "access plus 1 month"
+  ExpiresByType image/png "access plus 1 month"
+  ExpiresByType image/jpeg "access plus 1 month"
+  ExpiresByType image/svg+xml "access plus 1 month"
+  ExpiresByType image/x-icon "access plus 1 month"
+  ExpiresByType font/woff2 "access plus 1 year"
+  ExpiresByType application/pdf "access plus 1 week"
+</IfModule>

@@ -1,0 +1,181 @@
+/* ==========================================================================
+   tokens.css — design tokens for the BOTEPCO "Gazette" direction.
+   Every colour, size, space, radius, shadow and duration used by the site is
+   defined here. Other stylesheets reference these custom properties only.
+   ========================================================================== */
+
+:root {
+  /* ---- Colour: brand palette (all text pairings checked for WCAG 2.1 AA) ---- */
+  --color-ink: #13202f;           /* primary text, dark surfaces            */
+  --color-ink-raised: #24364a;    /* raised panels on dark surfaces          */
+  --color-paper: #f8f6f1;         /* page background                         */
+  --color-paper-deep: #efebe3;    /* alternate section background            */
+  --color-surface: #ffffff;       /* cards, inputs                           */
+  --color-sky: #619dc4;           /* logo blue: rules and accents, not text  */
+  --color-sky-tint: #e7f0f7;      /* soft blue panels                        */
+  --color-action: #1f5a8a;        /* links, primary buttons (6.7:1 on paper) */
+  --color-action-strong: #174a73; /* hover / pressed                         */
+  --color-ochre: #9a4f12;         /* misconduct, alerts, focus on light      */
+  --color-ochre-tint: #f6ece2;
+  --color-success: #276338;
+  --color-muted: #4a5563;         /* secondary text (7.0:1 on paper)         */
+  --color-rule: #d9d4ca;          /* hairlines, decorative borders           */
+  --color-rule-strong: #857f74;   /* form field borders (3.9:1 on white)     */
+  --color-on-dark: #f8f6f1;
+  --color-on-dark-muted: #c2cbd5;
+  --color-link-on-dark: #a7ccea;
+  --color-focus-on-dark: #f2c14e;
+  --color-scrim: rgb(19 32 47 / 0.55);
+
+  /* ---- Colour: semantic roles (re-pointed by .theme-ink) ---- */
+  --text: var(--color-ink);
+  --text-muted: var(--color-muted);
+  --bg: var(--color-paper);
+  --surface: var(--color-surface);
+  --rule: var(--color-rule);
+  --link: var(--color-action);
+  --link-hover: var(--color-action-strong);
+  --focus-color: var(--color-ochre);
+  --accent-rule: var(--color-sky);
+
+  /* ---- Typography ---- */
+  --font-serif: "Source Serif 4", "Source Serif Pro", Georgia, Cambria, "Times New Roman", serif;
+  --font-sans: "Public Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+  /* Fluid type scale: 320px → 1440px viewport */
+  --step--2: clamp(0.78rem, 0.76rem + 0.08vw, 0.83rem);
+  --step--1: clamp(0.875rem, 0.85rem + 0.12vw, 0.95rem);
+  --step-0: clamp(1rem, 0.96rem + 0.18vw, 1.125rem);
+  --step-1: clamp(1.15rem, 1.08rem + 0.36vw, 1.4rem);
+  --step-2: clamp(1.35rem, 1.2rem + 0.7vw, 1.8rem);
+  --step-3: clamp(1.6rem, 1.35rem + 1.2vw, 2.4rem);
+  --step-4: clamp(1.95rem, 1.5rem + 2.1vw, 3.3rem);
+  --step-5: clamp(2.4rem, 1.7rem + 3.4vw, 4.4rem);
+
+  --leading-tight: 1.12;
+  --leading-snug: 1.3;
+  --leading-body: 1.6;
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+  --tracking-tight: -0.012em;
+  --tracking-caps: 0.09em;
+  --measure: 68ch;
+  --measure-narrow: 52ch;
+
+  /* ---- Space: fluid scale ---- */
+  --space-3xs: clamp(0.25rem, 0.23rem + 0.1vw, 0.31rem);
+  --space-2xs: clamp(0.5rem, 0.47rem + 0.13vw, 0.56rem);
+  --space-xs: clamp(0.75rem, 0.71rem + 0.18vw, 0.875rem);
+  --space-s: clamp(1rem, 0.95rem + 0.22vw, 1.125rem);
+  --space-m: clamp(1.5rem, 1.42rem + 0.36vw, 1.75rem);
+  --space-l: clamp(2rem, 1.89rem + 0.54vw, 2.375rem);
+  --space-xl: clamp(3rem, 2.82rem + 0.89vw, 3.5rem);
+  --space-2xl: clamp(4rem, 3.6rem + 1.8vw, 5.25rem);
+  --space-3xl: clamp(5rem, 4.3rem + 3.2vw, 7rem);
+
+  /* ---- Layout ---- */
+  --container: 76rem;
+  --container-narrow: 46rem;
+  --gutter: clamp(1rem, 0.6rem + 2vw, 2rem);
+  --header-height: 4.25rem;        /* sticky header height, used for scroll-padding */
+  --header-row-height: 4.25rem;    /* desktop logo row */
+  --logo-height: 1.375rem;         /* < 360px: keeps logo, search and menu on one row */
+  --logo-height-md: 1.75rem;
+  --logo-height-lg: 2rem;
+  --tap-target: 2.75rem;           /* 44px minimum touch target */
+  --target-min: 1.5rem;            /* 24px floor for small standalone links (WCAG 2.5.8) */
+  --card-min: 16rem;               /* auto-fit grid column minimum */
+  --card-min-sm: 13rem;
+  --card-min-news: 18rem;
+  --footer-col-min: 9rem;
+  --dropdown-width: 17rem;
+  --hero-media-ratio: 4 / 3;
+  --hero-media-ratio-sm: 16 / 10;
+  --hero-focal-point: center 35%;
+  --hero-title-measure: 22ch;
+  --news-media-ratio: 7 / 5;
+  --page-title-measure: 24ch;
+  --sidebar-width: 19rem;
+  --person-min: 15rem;
+  --person-media-ratio: 4 / 5;
+  --map-ratio: 4 / 3;
+  --map-ratio-wide: 2 / 1;
+  --form-width: 44rem;
+  --control-size: 1.5rem;          /* checkbox / radio size (24px) */
+  --textarea-min-height: 9rem;
+  --date-block-width: 4.5rem;
+  --avatar-size: 3.5rem;
+
+  /* ---- Borders, radius ---- */
+  --border-thin: 1px;
+  --border-thick: 2px;
+  --rule-heavy: 3px;
+  --radius-sm: 2px;
+  --radius-md: 4px;
+  --radius-lg: 8px;
+  --radius-pill: 999px;
+
+  /* ---- Elevation ---- */
+  --shadow-sm: 0 1px 2px rgb(19 32 47 / 0.06);
+  --shadow-md: 0 8px 24px -8px rgb(19 32 47 / 0.22);
+  --shadow-lg: 0 20px 44px -12px rgb(19 32 47 / 0.3);
+
+  /* ---- Icons ---- */
+  --icon-s: 1rem;
+  --icon-m: 1.25rem;
+  --icon-l: 1.75rem;
+  --icon-stroke: 1.75;
+
+  /* ---- Motion ---- */
+  --duration-fast: 120ms;
+  --duration-base: 220ms;
+  --duration-count: 1400ms;
+  --ease-out: cubic-bezier(0.2, 0.7, 0.2, 1);
+
+  /* ---- Focus ---- */
+  --focus-width: 3px;
+  --focus-offset: 3px;
+  --underline-offset: 0.2em;
+
+  /* ---- Stacking ---- */
+  --z-header: 100;
+  --z-dropdown: 110;
+  --z-overlay: 200;
+  --z-banner: 300;
+  --z-skip: 400;
+}
+
+/* Dark surfaces (utility bar, stats band, footer) re-point the semantic roles */
+.theme-ink {
+  --text: var(--color-on-dark);
+  --text-muted: var(--color-on-dark-muted);
+  --bg: var(--color-ink);
+  --surface: var(--color-ink-raised);
+  --rule: rgb(248 246 241 / 0.16);
+  --link: var(--color-link-on-dark);
+  --link-hover: var(--color-on-dark);
+  --focus-color: var(--color-focus-on-dark);
+}
+
+@media (min-width: 22.5em) {
+  :root {
+    --logo-height: var(--logo-height-md);
+  }
+}
+
+@media (min-width: 64em) {
+  :root {
+    --header-height: 7.5rem;       /* logo row + nav row */
+    --logo-height: var(--logo-height-lg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --duration-fast: 0ms;
+    --duration-base: 0ms;
+    --duration-count: 0ms;
+  }
+}

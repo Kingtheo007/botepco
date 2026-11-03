@@ -1,0 +1,162 @@
+/* ==========================================================================
+   pages/home.css — homepage-only arrangement of shared components.
+   ========================================================================== */
+
+/* ---- Hero ---- */
+.hero {
+  padding-block: var(--space-xl) var(--space-2xl);
+  background: var(--color-paper);
+  border-bottom: var(--border-thin) solid var(--rule);
+}
+
+.hero__inner {
+  display: grid;
+  gap: var(--space-l);
+  align-items: center;
+}
+
+.hero__text > * + * {
+  margin-block-start: var(--space-s);
+}
+
+.hero h1 {
+  font-size: var(--step-4);
+  max-width: var(--hero-title-measure);
+}
+
+.hero__actions {
+  padding-block-start: var(--space-xs);
+}
+
+.hero__facts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2xs) var(--space-m);
+  padding-block-start: var(--space-s);
+  font-size: var(--step--1);
+  color: var(--color-muted);
+}
+
+.hero__facts li {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-3xs);
+}
+
+.hero__facts .icon {
+  color: var(--color-sky);
+}
+
+/* Photo sits on an offset sky-blue frame: the "plate" motif of the Gazette direction */
+.hero__media {
+  position: relative;
+  isolation: isolate;
+  margin-inline-end: var(--space-s);
+  margin-block-end: var(--space-s);
+}
+
+.hero__media img {
+  width: 100%;
+  aspect-ratio: var(--hero-media-ratio-sm);
+  object-fit: cover;
+  object-position: var(--hero-focal-point);
+  border: var(--border-thin) solid var(--color-ink);
+}
+
+.hero__media::before {
+  content: "";
+  position: absolute;
+  inset: var(--space-s) calc(var(--space-s) * -1) calc(var(--space-s) * -1) var(--space-s);
+  z-index: -1;
+  border: var(--rule-heavy) solid var(--color-sky);
+}
+
+@media (min-width: 64em) {
+  .hero {
+    padding-block: var(--space-2xl);
+  }
+
+  .hero__inner {
+    grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
+    gap: var(--space-2xl);
+  }
+
+  .hero__media img {
+    aspect-ratio: var(--hero-media-ratio);
+  }
+}
+
+/* ---- Tasks ---- */
+.tasks {
+  padding-block: var(--space-xl) var(--space-2xl);
+}
+
+@media (min-width: 48em) {
+  .tasks .task-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .tasks .task-grid > :first-child {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (min-width: 64em) {
+  .tasks .task-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+/* ---- Register search band ---- */
+.verify {
+  background: var(--color-sky-tint);
+  border-block: var(--border-thin) solid var(--rule);
+}
+
+.verify__inner {
+  display: grid;
+  gap: var(--space-l);
+  align-items: start;
+}
+
+.verify__intro > * + * {
+  margin-block-start: var(--space-xs);
+}
+
+.verify__intro h2 {
+  font-size: var(--step-2);
+}
+
+@media (min-width: 48em) {
+  .verify__inner {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr);
+    gap: var(--space-2xl);
+  }
+}
+
+/* ---- FAQ preview ---- */
+.faq__inner {
+  display: grid;
+  gap: var(--space-l);
+}
+
+.faq__intro > * + * {
+  margin-block-start: var(--space-s);
+}
+
+.faq__intro p {
+  color: var(--color-muted);
+}
+
+@media (min-width: 64em) {
+  .faq__inner {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+    gap: var(--space-2xl);
+  }
+
+  .faq__intro {
+    position: sticky;
+    top: calc(var(--header-height) + var(--space-l));
+    align-self: start;
+  }
+}

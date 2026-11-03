@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /search/
+Disallow: /templates/
+Disallow: /partials/
+Disallow: /tools/
+
+Sitemap: https://botepco.org.bw/sitemap.xml

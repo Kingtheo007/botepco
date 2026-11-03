@@ -1,0 +1,75 @@
+{
+  "log": [
+    {
+      "task": "Register/renew",
+      "ok": true,
+      "detail": "visible TRLS links on the homepage at 375px: Register or renew on TRLS (external site | Register or renew your licence Log in to | https://trls.gov.bw/customer/signup | Access TRLS (external site)"
+    },
+    {
+      "task": "Register/renew",
+      "ok": true,
+      "detail": "menu opens and shows Teacher Portal (TRLS) first"
+    },
+    {
+      "task": "Verify a teacher",
+      "ok": true,
+      "detail": "task tile opens Teacher Verification"
+    },
+    {
+      "task": "Verify a teacher",
+      "ok": true,
+      "detail": "result shown and focused: \"Online register search isn’t available yet\""
+    },
+    {
+      "task": "Find CPD",
+      "ok": true,
+      "detail": "CPD events page with 2 events"
+    },
+    {
+      "task": "Report misconduct",
+      "ok": true,
+      "detail": "lands on the form; heading top 84px is below the sticky header (71px)"
+    },
+    {
+      "task": "Report misconduct",
+      "ok": true,
+      "detail": "empty submit shows error summary (focused): Enter where the misconduct happened; Describe the complaint or alleged misconduct"
+    },
+    {
+      "task": "Report misconduct",
+      "ok": true,
+      "detail": "valid submit shows status (focused): \"This form isn’t connected yet\""
+    },
+    {
+      "task": "Contact BOTEPCO",
+      "ok": true,
+      "detail": "menu > Contact > Get in Touch opens /contact/ with tap-to-call and email links"
+    },
+    {
+      "task": "Search",
+      "ok": true,
+      "detail": "typing \"fees\" in the header search lists: /help/#help-registration, /help/, /services/teacher-registration-licensing/"
+    },
+    {
+      "task": "Keyboard",
+      "ok": true,
+      "detail": "first Tab reaches the skip link"
+    },
+    {
+      "task": "Keyboard",
+      "ok": true,
+      "detail": "visible focus outline on all of the first 16 stops: Skip to main content > A > (+267) 393 3472 > enquiries@botepco.org.bw > Report misconduct > Search > Teacher Portal (TRLS, external s > Home > About Us > About Us pages > Services > Services pages > CPD Resources > CPD Resources pages > Media Hub > Media Hub pages"
+    },
+    {
+      "task": "Keyboard",
+      "ok": true,
+      "detail": "Enter on the skip link moves focus to <main> (main)"
+    },
+    {
+      "task": "Keyboard",
+      "ok": true,
+      "detail": "Enter on an FAQ question opens the answer"
+    }
+  ],
+  "errors": []
+}

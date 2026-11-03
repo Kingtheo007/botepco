@@ -1,0 +1,289 @@
+[
+ {
+  "url": "/",
+  "title": "Home",
+  "section": "BOTEPCO",
+  "summary": "Regulating and advancing a professional, ethical and competent teaching profession for quality education in Botswana.",
+  "keywords": "botepco council home"
+ },
+ {
+  "url": "/about/",
+  "title": "About BOTEPCO",
+  "section": "About Us",
+  "summary": "The statutory body established under Act No. 22 of 2019 to regulate, professionalise and uphold standards within the teaching profession. Mandate, values, vision and mission.",
+  "keywords": "mandate mission vision values act ministry board"
+ },
+ {
+  "url": "/about/leadership/",
+  "title": "Leadership",
+  "section": "About Us",
+  "summary": "The Board of Directors and the Executive Management Team guiding BOTEPCO.",
+  "keywords": "board directors chairperson registrar exco executive management"
+ },
+ {
+  "url": "/about/regulatory-instruments/",
+  "title": "Regulatory Instruments",
+  "section": "About Us",
+  "summary": "Download the BOTEPCO Act, the Professional Teaching Standards, the Regulations and the Code of Ethics.",
+  "keywords": "act regulations standards code of ethics download pdf law"
+ },
+ {
+  "url": "/services/",
+  "title": "Services",
+  "section": "Services",
+  "summary": "All BOTEPCO services for teachers, student teachers, employers and the public.",
+  "keywords": "services"
+ },
+ {
+  "url": "/services/teacher-registration-licensing/",
+  "title": "Teacher Registration & Licensing",
+  "section": "Services",
+  "summary": "Apply for registration and licensing, restoration, change of category, removal, annual subscription and licence renewal.",
+  "keywords": "register licence license renew renewal trls apply subscription fees restoration"
+ },
+ {
+  "url": "/services/student-registration/",
+  "title": "Student Registration",
+  "section": "Services",
+  "summary": "Register as a student teacher with BOTEPCO and obtain recognition as a teacher in training.",
+  "keywords": "student teacher training register"
+ },
+ {
+  "url": "/services/professional-development/",
+  "title": "Professional Development",
+  "section": "Services",
+  "summary": "Continuous professional development: CPD providers, recognised professional learning activities and teachers' learning records.",
+  "keywords": "cpd continuous professional development points providers framework learning"
+ },
+ {
+  "url": "/services/teacher-verification/",
+  "title": "Teacher Verification",
+  "section": "Services",
+  "summary": "Verify a teacher's registration, licence and professional status.",
+  "keywords": "verify check teacher register licence status employer"
+ },
+ {
+  "url": "/services/code-of-ethics/",
+  "title": "Teacher Code of Ethics",
+  "section": "Services",
+  "summary": "Ethical standards and professional conduct, including how to report professional misconduct.",
+  "keywords": "ethics conduct misconduct report complaint code"
+ },
+ {
+  "url": "/services/code-of-ethics/#report-misconduct",
+  "title": "Report professional misconduct",
+  "section": "Services",
+  "summary": "Notify BOTEPCO about suspected behaviour by a teacher that may violate the code of ethics.",
+  "keywords": "report misconduct complaint abuse ethics form"
+ },
+ {
+  "url": "/services/customer-support/",
+  "title": "Customer Support",
+  "section": "Services",
+  "summary": "Support and guidance for teachers: enquiries, application guidance and service issues.",
+  "keywords": "support helpdesk enquiries help"
+ },
+ {
+  "url": "/services/research-advocacy/",
+  "title": "Research & Advocacy",
+  "section": "Services",
+  "summary": "Research, policy and advocacy initiatives that advance the teaching profession.",
+  "keywords": "research policy advocacy"
+ },
+ {
+  "url": "/cpd/",
+  "title": "CPD Resources",
+  "section": "CPD Resources",
+  "summary": "CPD providers and CPD events for teachers.",
+  "keywords": "cpd resources"
+ },
+ {
+  "url": "/cpd/providers/",
+  "title": "CPD Providers",
+  "section": "CPD Resources",
+  "summary": "Registered providers of continuing professional development.",
+  "keywords": "cpd providers training"
+ },
+ {
+  "url": "/cpd/events/",
+  "title": "CPD Events",
+  "section": "CPD Resources",
+  "summary": "Upcoming and past CPD events and professional learning activities.",
+  "keywords": "cpd events calendar workshop webinar points"
+ },
+ {
+  "url": "/media/",
+  "title": "Media Hub",
+  "section": "Media Hub",
+  "summary": "News, press releases, publications, notices, teacher stories, events and galleries.",
+  "keywords": "media"
+ },
+ {
+  "url": "/media/news/",
+  "title": "News",
+  "section": "Media Hub",
+  "summary": "The latest BOTEPCO news, partnerships and milestones.",
+  "keywords": "news updates"
+ },
+ {
+  "url": "/media/news/strengthening-the-professionalisation-of-teaching/",
+  "title": "Strengthening the professionalisation of teaching",
+  "section": "News",
+  "summary": "BOTEPCO launched the Teacher Registration and Licensing System (TRLS) on 21 October 2025; 1,271 teachers have been licensed.",
+  "keywords": "trls launch licensing news"
+ },
+ {
+  "url": "/media/news/aftra-13th-conference-15th-round-table/",
+  "title": "Botswana hailed for hosting the AFTRA 13th Conference & 15th Round Table",
+  "section": "News",
+  "summary": "The 13th AFTRA Teaching & Learning Conference and 15th Roundtable, 5–8 May 2026, Gaborone International Convention Centre.",
+  "keywords": "aftra conference roundtable gicc president"
+ },
+ {
+  "url": "/media/news/botepco-and-unicef-strengthen-teacher-professional-development/",
+  "title": "BOTEPCO and UNICEF strengthen teacher professional development",
+  "section": "News",
+  "summary": "A programme on digital literacy, Professional Teaching Standards and the Teacher Code of Ethics, with support from UNICEF.",
+  "keywords": "unicef partnership digital literacy"
+ },
+ {
+  "url": "/media/press-releases/",
+  "title": "Press Releases",
+  "section": "Media Hub",
+  "summary": "Official updates, announcements and media statements.",
+  "keywords": "press releases statements media"
+ },
+ {
+  "url": "/media/publications/",
+  "title": "Publications",
+  "section": "Media Hub",
+  "summary": "The official library for research, guidelines, annual reports and public documentation.",
+  "keywords": "publications annual report documents"
+ },
+ {
+  "url": "/media/notices/",
+  "title": "Notices",
+  "section": "Media Hub",
+  "summary": "Organisational updates and public notices.",
+  "keywords": "notices announcements"
+ },
+ {
+  "url": "/media/teacher-stories/",
+  "title": "Teacher Stories",
+  "section": "Media Hub",
+  "summary": "Stories from teachers registered with BOTEPCO.",
+  "keywords": "teacher stories testimonials"
+ },
+ {
+  "url": "/media/events/",
+  "title": "Events",
+  "section": "Media Hub",
+  "summary": "BOTEPCO events: past highlights and upcoming dates.",
+  "keywords": "events calendar"
+ },
+ {
+  "url": "/media/galleries/",
+  "title": "Galleries",
+  "section": "Media Hub",
+  "summary": "Photo galleries from BOTEPCO events.",
+  "keywords": "gallery photos pictures"
+ },
+ {
+  "url": "/procurement/",
+  "title": "Procurement",
+  "section": "Procurement",
+  "summary": "Tenders, requests for quotation and supplier registration.",
+  "keywords": "procurement"
+ },
+ {
+  "url": "/procurement/tenders/",
+  "title": "Tenders & RFQ",
+  "section": "Procurement",
+  "summary": "Official procurement notices, tender documentation and supplier calls for BOTEPCO operations.",
+  "keywords": "tenders rfq quotation bids procurement"
+ },
+ {
+  "url": "/procurement/supplier-registration/",
+  "title": "Supplier Registration",
+  "section": "Procurement",
+  "summary": "Register your company as a BOTEPCO supplier.",
+  "keywords": "supplier vendor register company ppadb cipa"
+ },
+ {
+  "url": "/jobs/",
+  "title": "Jobs",
+  "section": "BOTEPCO",
+  "summary": "Open positions at BOTEPCO.",
+  "keywords": "jobs vacancies careers employment"
+ },
+ {
+  "url": "/csr/",
+  "title": "Corporate Social Responsibility",
+  "section": "BOTEPCO",
+  "summary": "BOTEPCO's community projects, including the GBV, Tashata JSS and Sowa Primary School projects.",
+  "keywords": "csr community gbv donation school"
+ },
+ {
+  "url": "/contact/",
+  "title": "Get in Touch",
+  "section": "Contact",
+  "summary": "Contact BOTEPCO: (+267) 393 3472, enquiries@botepco.org.bw, Plot 63726 Fairgrounds, Gaborone. Mon–Fri 08:00–17:00.",
+  "keywords": "contact phone email address office hours location map"
+ },
+ {
+  "url": "/help/",
+  "title": "Help and FAQs",
+  "section": "Contact",
+  "summary": "Answers about registration, licensing, fees, professional standards and CPD.",
+  "keywords": "help faq questions fees renew expired licence p50 p120"
+ },
+ {
+  "url": "/data-privacy-notice/",
+  "title": "Data Privacy Notice",
+  "section": "BOTEPCO",
+  "summary": "How the Council collects, uses and protects personal information under the Data Protection Act.",
+  "keywords": "privacy data protection personal information dpa"
+ },
+ {
+  "url": "/cookie-policy/",
+  "title": "Cookie Policy",
+  "section": "BOTEPCO",
+  "summary": "How this website uses cookies and similar technologies.",
+  "keywords": "cookies consent"
+ },
+ {
+  "url": "/media/news/gbv-project-2025/",
+  "title": "GBV Project – 2025",
+  "section": "CSR",
+  "summary": "BOTEPCO supports GBV survivors through “A Council That Cares”: donations to the Botswana Gender Based Violence Prevention and Support Centre, 25 November 2025.",
+  "keywords": "csr gbv donation council that cares 16 days activism"
+ },
+ {
+  "url": "/media/news/gbv-project-2024/",
+  "title": "GBV Project – 2024",
+  "section": "CSR",
+  "summary": "BOTEPCO staff donate to the Botswana Gender Based Violence Prevention and Support Centre.",
+  "keywords": "csr gbv donation christmas charity drive"
+ },
+ {
+  "url": "/media/news/tashata-jss-csr-project/",
+  "title": "Tashata JSS CSR Project",
+  "section": "CSR",
+  "summary": "BOTEPCO empowers Tashata Junior Secondary School with donations, 21 October 2024.",
+  "keywords": "csr school donation tashata"
+ },
+ {
+  "url": "/media/news/sowa-primary-school-csr-project/",
+  "title": "Sowa Primary School CSR Project",
+  "section": "CSR",
+  "summary": "BOTEPCO takes over Sowa Primary School and donates a laptop, printer and supplies, 12 July 2024.",
+  "keywords": "csr school donation sowa"
+ },
+ {
+  "url": "/help/#help-registration",
+  "title": "Licence fees, validity and renewal",
+  "section": "Help",
+  "summary": "Licensing fees are P50 for citizens and P120 for non-citizens. Renew online through TRLS.",
+  "keywords": "fees cost p50 p120 renew renewal expired licence license valid"
+ }
+]

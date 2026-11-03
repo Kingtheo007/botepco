@@ -1,0 +1,615 @@
+/* ==========================================================================
+   layout.css — layout primitives (container, section, stack, cluster, grid)
+   and the page regions shared by every page: site header and site footer.
+   ========================================================================== */
+
+/* ---- Page frame: footer stays at the bottom on short pages ---- */
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+/* ---- Primitives ---- */
+.container {
+  width: min(var(--container), 100% - var(--gutter) * 2);
+  margin-inline: auto;
+}
+
+.container--narrow {
+  width: min(var(--container-narrow), 100% - var(--gutter) * 2);
+}
+
+.section {
+  padding-block: var(--space-xl);
+}
+
+@media (min-width: 48em) {
+  .section {
+    padding-block: var(--space-2xl);
+  }
+}
+
+.section--tight {
+  padding-block: var(--space-xl);
+}
+
+.section--deep {
+  background: var(--color-paper-deep);
+}
+
+.section--white {
+  background: var(--color-surface);
+}
+
+.section--ink {
+  background: var(--bg);
+  color: var(--text);
+}
+
+.stack > * + * {
+  margin-block-start: var(--stack-space, var(--space-s));
+}
+
+.stack--l > * + * {
+  --stack-space: var(--space-xl);
+}
+
+.stack--m > * + * {
+  --stack-space: var(--space-m);
+}
+
+.cluster {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--cluster-gap, var(--space-xs));
+}
+
+.grid-auto {
+  display: grid;
+  gap: var(--grid-gap, var(--space-m));
+  grid-template-columns: repeat(auto-fill, minmax(min(var(--grid-min, var(--card-min)), 100%), 1fr));
+}
+
+/* ==========================================================================
+   Site header
+   Mobile: one row (logo · search · portal · menu) with an off-canvas menu.
+   ≥64em: two rows — logo, utility links and actions; then the full-width nav.
+   DOM order matches visual order at every size.
+   ========================================================================== */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: var(--z-header);
+  background: var(--color-surface);
+  border-bottom: var(--rule-heavy) solid var(--accent-rule);
+}
+
+.masthead {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-xs);
+  min-height: var(--header-height);
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  min-height: var(--tap-target);
+  margin-inline-end: auto;
+}
+
+.brand img {
+  width: auto;
+  height: var(--logo-height);
+}
+
+.masthead__utility {
+  display: none;
+}
+
+.masthead__actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2xs);
+}
+
+/* Scoped to .masthead__actions so these win over the generic .btn / .icon-btn rules */
+.masthead__actions .masthead__portal {
+  display: none;
+}
+
+@media (min-width: 30em) {
+  .masthead__actions .masthead__portal {
+    display: inline-flex;
+  }
+}
+
+/* Menu toggle: a real link to #site-menu, enhanced into a disclosure by nav.js */
+.menu-toggle .icon-close,
+.menu-toggle[aria-expanded="true"] .icon-open {
+  display: none;
+}
+
+.menu-toggle[aria-expanded="true"] .icon-close {
+  display: block;
+}
+
+/* ---- Primary navigation: mobile panel (default) ---- */
+.site-nav {
+  display: none;
+}
+
+.site-nav:target,
+.js .site-nav.is-open {
+  display: block;
+  position: absolute;
+  top: calc(100% + var(--rule-heavy));
+  inset-inline: 0;
+  height: calc(100dvh - var(--header-height) - var(--rule-heavy));
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding-block-end: var(--space-xl);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-lg);
+}
+
+.site-nav__head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-xs);
+  padding: var(--space-s) var(--gutter);
+  border-bottom: var(--border-thin) solid var(--rule);
+}
+
+.js .site-nav__close {
+  display: none;
+}
+
+.nav-list {
+  margin: 0;
+}
+
+.nav-item {
+  border-bottom: var(--border-thin) solid var(--rule);
+}
+
+.nav-item__row {
+  display: flex;
+  align-items: stretch;
+}
+
+.nav-link {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  min-height: var(--tap-target);
+  padding: var(--space-2xs) var(--gutter);
+  color: var(--color-ink);
+  font-weight: var(--weight-semibold);
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: var(--color-action);
+  text-decoration: underline;
+}
+
+.nav-link[aria-current] {
+  box-shadow: inset var(--rule-heavy) 0 0 var(--color-action);
+  color: var(--color-action);
+}
+
+.nav-sub-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--tap-target);
+  padding: 0;
+  background: none;
+  border: 0;
+  border-left: var(--border-thin) solid var(--rule);
+  color: var(--color-ink);
+}
+
+.nav-sub-toggle .icon {
+  transition: transform var(--duration-base) var(--ease-out);
+}
+
+.nav-sub-toggle[aria-expanded="true"] .icon {
+  transform: rotate(180deg);
+}
+
+.nav-sub {
+  margin: 0;
+  padding-block-end: var(--space-2xs);
+}
+
+.js .nav-sub {
+  display: none;
+}
+
+.js .nav-item.is-open > .nav-sub {
+  display: block;
+}
+
+.nav-sub a {
+  display: flex;
+  align-items: center;
+  min-height: var(--tap-target);
+  padding: var(--space-3xs) var(--gutter) var(--space-3xs) calc(var(--gutter) + var(--space-s));
+  color: var(--color-ink);
+  text-decoration: none;
+}
+
+.nav-sub a:hover {
+  background: var(--color-sky-tint);
+  color: var(--color-action);
+}
+
+.nav-sub a[aria-current="page"] {
+  color: var(--color-action);
+  font-weight: var(--weight-semibold);
+}
+
+html.nav-open {
+  overflow: hidden;
+}
+
+/* ---- Desktop header ---- */
+@media (min-width: 64em) {
+  .masthead {
+    column-gap: var(--space-m);
+    row-gap: 0;
+    min-height: 0;
+    padding-block-start: var(--space-2xs);
+  }
+
+  .brand {
+    min-height: var(--header-row-height);
+  }
+
+  .masthead__utility {
+    display: flex;
+    align-items: center;
+    gap: var(--space-m);
+    font-size: var(--step--1);
+  }
+
+  .masthead__utility a {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-3xs);
+    color: var(--color-ink);
+    text-decoration: none;
+  }
+
+  .masthead__utility a:hover {
+    color: var(--color-action);
+    text-decoration: underline;
+  }
+
+  .masthead__utility .utility-alert {
+    color: var(--color-ochre);
+    font-weight: var(--weight-semibold);
+  }
+
+  .masthead__actions .menu-toggle {
+    display: none;
+  }
+
+  .site-nav,
+  .site-nav:target,
+  .js .site-nav.is-open {
+    display: block;
+    position: static;
+    flex-basis: 100%;
+    max-height: none;
+    overflow: visible;
+    padding: 0;
+    background: none;
+    box-shadow: none;
+    border-top: var(--border-thin) solid var(--rule);
+  }
+
+  .site-nav__head {
+    display: none;
+  }
+
+  .nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-inline: calc(var(--space-xs) * -1);
+  }
+
+  .nav-item {
+    position: relative;
+    border: 0;
+  }
+
+  .nav-item__row {
+    align-items: center;
+  }
+
+  .nav-link {
+    flex: none;
+    min-height: var(--tap-target);
+    padding: 0 var(--space-xs);
+    font-size: var(--step--1);
+  }
+
+  .nav-item--has-sub .nav-link {
+    padding-inline-end: var(--space-3xs);
+  }
+
+  .nav-link[aria-current] {
+    box-shadow: inset 0 calc(var(--rule-heavy) * -1) 0 var(--color-action);
+  }
+
+  .nav-sub-toggle {
+    width: auto;
+    height: var(--tap-target);
+    padding-inline: var(--space-3xs) var(--space-xs);
+    border: 0;
+  }
+
+  .nav-sub-toggle .icon {
+    width: var(--icon-s);
+    height: var(--icon-s);
+  }
+
+  .nav-sub {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: var(--z-dropdown);
+    min-width: var(--dropdown-width);
+    padding-block: var(--space-2xs);
+    background: var(--color-surface);
+    border: var(--border-thin) solid var(--rule);
+    border-top: var(--rule-heavy) solid var(--color-ink);
+    box-shadow: var(--shadow-md);
+  }
+
+  .nav-item:last-child .nav-sub {
+    left: auto;
+    right: 0;
+  }
+
+  /* No-JS fallback: open on hover and keyboard focus */
+  .no-js .nav-item--has-sub:hover > .nav-sub,
+  .no-js .nav-item--has-sub:focus-within > .nav-sub {
+    display: block;
+  }
+
+  .nav-sub a {
+    min-height: 0;
+    padding: var(--space-2xs) var(--space-s);
+    font-size: var(--step--1);
+  }
+
+  html.nav-open {
+    overflow: visible;
+  }
+}
+
+/* ---- Search panel (revealed by search.js; the toggle links to /search/ without JS) ---- */
+.search-panel {
+  padding-block: var(--space-m);
+  background: var(--color-paper);
+  border-top: var(--border-thin) solid var(--rule);
+}
+
+.search-panel[hidden] {
+  display: none;
+}
+
+/* ==========================================================================
+   Inner-page header (breadcrumb, title, lead) and two-column layout
+   ========================================================================== */
+.page-hero {
+  padding-block: var(--space-l) var(--space-xl);
+  background: var(--color-paper);
+  border-bottom: var(--border-thin) solid var(--rule);
+}
+
+.page-hero > .container > * + * {
+  margin-block-start: var(--space-s);
+}
+
+.page-hero h1 {
+  font-size: var(--step-4);
+  max-width: var(--page-title-measure);
+}
+
+.page-hero__meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-2xs) var(--space-s);
+  font-size: var(--step--1);
+  color: var(--color-muted);
+}
+
+.breadcrumb ol {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3xs) var(--space-2xs);
+  font-size: var(--step--1);
+  color: var(--color-muted);
+}
+
+.breadcrumb li {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2xs);
+}
+
+.breadcrumb li + li::before {
+  content: "/";
+  color: var(--color-rule-strong);
+}
+
+.breadcrumb a {
+  color: var(--color-muted);
+}
+
+.breadcrumb a:hover {
+  color: var(--color-action);
+}
+
+.breadcrumb [aria-current="page"] {
+  color: var(--color-ink);
+  font-weight: var(--weight-semibold);
+}
+
+.layout-sidebar {
+  display: grid;
+  gap: var(--space-xl);
+  align-items: start;
+}
+
+.layout-sidebar > * {
+  min-width: 0;
+}
+
+.layout-sidebar__aside > * + * {
+  margin-block-start: var(--space-l);
+}
+
+@media (min-width: 64em) {
+  .layout-sidebar {
+    grid-template-columns: minmax(0, 1fr) var(--sidebar-width);
+    gap: var(--space-2xl);
+  }
+}
+
+/* ==========================================================================
+   Site footer
+   ========================================================================== */
+.site-footer {
+  padding-block: var(--space-2xl) var(--space-l);
+  background: var(--bg);
+  color: var(--text);
+  font-size: var(--step--1);
+}
+
+.site-footer a {
+  color: var(--text);
+  text-decoration-color: var(--rule);
+}
+
+.site-footer a:hover {
+  color: var(--link);
+  text-decoration-color: currentColor;
+}
+
+.footer-top {
+  display: grid;
+  gap: var(--space-xl);
+}
+
+.footer-brand img {
+  width: auto;
+  height: var(--logo-height);
+}
+
+.footer-brand p {
+  margin-block-start: var(--space-s);
+  max-width: var(--measure-narrow);
+  color: var(--text-muted);
+}
+
+.footer-nav {
+  display: grid;
+  gap: var(--space-l);
+  grid-template-columns: repeat(auto-fit, minmax(min(var(--footer-col-min), 100%), 1fr));
+}
+
+.footer-heading {
+  margin-block-end: var(--space-xs);
+  font-family: var(--font-sans);
+  font-size: var(--step--1);
+  font-weight: var(--weight-bold);
+  letter-spacing: var(--tracking-caps);
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.footer-links li + li {
+  margin-block-start: var(--space-3xs);
+}
+
+.footer-links a {
+  display: inline-block;
+  padding-block: var(--space-3xs);
+}
+
+.hours {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: start;
+  column-gap: var(--space-m);
+  row-gap: var(--space-3xs);
+  margin-block-end: var(--space-s);
+}
+
+.hours dt {
+  color: var(--text-muted);
+}
+
+.contact-list li {
+  display: flex;
+  gap: var(--space-2xs);
+  align-items: flex-start;
+}
+
+.contact-list li + li {
+  margin-block-start: var(--space-2xs);
+}
+
+/* Small standalone links still get a 24px-high target */
+.contact-list a,
+.footer-bottom a,
+.footer-bottom .link-button {
+  display: inline-flex;
+  align-items: center;
+  min-height: var(--target-min);
+}
+
+.contact-list .icon {
+  margin-block-start: var(--space-3xs);
+  color: var(--color-sky);
+}
+
+.footer-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-s);
+  margin-block-start: var(--space-l);
+  padding-block-start: var(--space-m);
+  border-top: var(--border-thin) solid var(--rule);
+  color: var(--text-muted);
+}
+
+.footer-bottom ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2xs) var(--space-m);
+}
+
+@media (min-width: 64em) {
+  .footer-top {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 2.2fr) minmax(0, 1.1fr);
+  }
+}

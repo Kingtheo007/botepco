@@ -1,0 +1,199 @@
+/* ==========================================================================
+   forms.css — form layouts. Loaded only on pages with forms (contact,
+   misconduct report, supplier registration). Field defaults live in base.css.
+   ========================================================================== */
+
+.form {
+  display: grid;
+  gap: var(--space-m);
+  max-width: var(--form-width);
+}
+
+.form-section {
+  display: grid;
+  gap: var(--space-m);
+  margin: 0;
+  padding: var(--space-m);
+  background: var(--color-surface);
+  border: var(--border-thin) solid var(--rule);
+  border-top: var(--rule-heavy) solid var(--color-ink);
+  min-width: 0;
+}
+
+.form-section > legend {
+  float: left;
+  width: 100%;
+  padding: 0;
+  font-family: var(--font-serif);
+  font-size: var(--step-2);
+  font-weight: var(--weight-semibold);
+  line-height: var(--leading-tight);
+}
+
+.form-section > legend + * {
+  clear: both;
+}
+
+.form-section__intro {
+  font-size: var(--step--1);
+  color: var(--color-muted);
+}
+
+.field {
+  display: grid;
+  gap: var(--space-3xs);
+}
+
+.field__optional {
+  font-weight: var(--weight-regular);
+  color: var(--color-muted);
+}
+
+.field__hint {
+  font-size: var(--step--1);
+  color: var(--color-muted);
+}
+
+.field__error {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3xs);
+  font-size: var(--step--1);
+  font-weight: var(--weight-semibold);
+  color: var(--color-ochre);
+}
+
+.field__error[hidden] {
+  display: none;
+}
+
+textarea {
+  min-height: var(--textarea-min-height);
+  resize: vertical;
+}
+
+input[type="file"] {
+  padding: var(--space-2xs);
+  border-style: dashed;
+  background: var(--color-paper);
+}
+
+/* Grouped choices (radios and checkboxes) */
+.choice-group {
+  display: grid;
+  gap: var(--space-2xs);
+  margin: 0;
+  padding: 0;
+  border: 0;
+  min-width: 0;
+}
+
+.choice-group > legend {
+  padding: 0;
+  margin-block-end: var(--space-2xs);
+  font-weight: var(--weight-semibold);
+}
+
+.choice-group--inline {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2xs) var(--space-l);
+}
+
+.choice-grid {
+  display: grid;
+  gap: var(--space-2xs) var(--space-m);
+  grid-template-columns: repeat(auto-fill, minmax(min(var(--card-min), 100%), 1fr));
+}
+
+.choice {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-2xs);
+  min-height: var(--tap-target);
+  padding-block: var(--space-3xs);
+  font-weight: var(--weight-regular);
+  cursor: pointer;
+}
+
+.choice input {
+  flex: none;
+  width: var(--control-size);
+  height: var(--control-size);
+  margin-block-start: var(--space-3xs);
+  accent-color: var(--color-action);
+}
+
+.category-group {
+  padding-block-start: var(--space-s);
+  border-top: var(--border-thin) solid var(--rule);
+}
+
+.category-group > legend {
+  font-family: var(--font-serif);
+  font-size: var(--step-0);
+}
+
+/* Error summary shown at the top of the form after a failed submit */
+.error-summary {
+  padding: var(--space-m);
+  background: var(--color-ochre-tint);
+  border: var(--rule-heavy) solid var(--color-ochre);
+}
+
+.error-summary[hidden] {
+  display: none;
+}
+
+.error-summary h2 {
+  font-size: var(--step-1);
+}
+
+.error-summary ul {
+  margin-block-start: var(--space-xs);
+  padding-inline-start: var(--space-m);
+}
+
+.error-summary a {
+  color: var(--color-ochre);
+  font-weight: var(--weight-semibold);
+}
+
+/* Result after a submit (success, not connected, failure) */
+.form-status {
+  padding: var(--space-m);
+  background: var(--color-surface);
+  border-left: var(--rule-heavy) solid var(--color-action);
+}
+
+.form-status[hidden] {
+  display: none;
+}
+
+.form-status > * + * {
+  margin-block-start: var(--space-xs);
+}
+
+.form-status h2 {
+  font-size: var(--step-1);
+}
+
+.form-status--warn {
+  border-left-color: var(--color-ochre);
+}
+
+.form-status--ok {
+  border-left-color: var(--color-success);
+}
+
+.form-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-s);
+}
+
+.form-note {
+  font-size: var(--step--1);
+  color: var(--color-muted);
+}
